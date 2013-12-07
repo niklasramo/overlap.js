@@ -2,7 +2,7 @@
  * overlap.js v0.1
  * A JavaScript library for detecting collisions
  * http://github.com/niklasramo/overlap.js
- * Copyright (c) 2012, 2013 Niklas Rämö
+ * Copyright (c) 2013 Niklas Rämö
  * Released under the MIT license
  */
 

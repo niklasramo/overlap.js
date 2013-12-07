@@ -2,25 +2,38 @@
 
 *A JavaScript library for detecting collisions*
 
-overlap.js is a cross-browser JavaScript library that allows you to check if one or more elements are overlapping with another element.
+Overlap.js is a cross-browser JavaScript library that allows you to check if an element overlaps another element (or multiple elements). The library is tested in all modern browsers (Chrome, Firefox, Opera, Safari, IE7+).
 
 ##Download
 
-**[v0.1 - Production](overlap.min.js)**
+**[v0.1 - Production](overlap.min.js)**  
 **[v0.1 - Development](overlap.js)**
 
-##Getting started
+##Usage
 
-Include the overlap.js script in your site.
+First of all, include the overlap.js script in your site.
 ```html
 <script src="overlap.min.js"></script>
 ```
 
-##Usage
+Then call the overlap function like this.
+
+```javascript
+// Check if el1 overlaps with el2. Returns boolean.
+overlap(el1, el2);
+
+// Check if el1 overlaps with el2 or el3. Returns boolean.
+overlap(el1, [el2, el3]);
+
+// Check if el1 overlaps with el2 or el3. Returns an object containing explicit overlap data.
+overlap(el1, [el2, el3], true);
+```
+
+##Format
 
 ```javascript
 // The format
-overlap( player, targets, returnData );
+overlap( player, targets [, returnData] );
 ```
 
 **player** *(type: element)* *(required)*   

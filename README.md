@@ -39,7 +39,7 @@ overlap( player, targets [, returnData] );
 **player** *(type: element)* *(required)*   
 Provide the player element that will be checked against target elements.
 
-**method** *(type: array or element)* *(required)*   
+**targets** *(type: array or element)* *(required)*   
 Provide a target element or an array of target elements you want to compare with the player element.
 
 **returnData** *(type: boolean)* *(optional)*   
@@ -47,4 +47,4 @@ By default this setting is set to false, which means that the overlap function r
 
 ##License
 
-Copyright &copy; 2013 Niklas Rämö. Licensed under **[the MIT license](LICENSE)**.
+Copyright &copy; 2013-2014 Niklas Rämö. Licensed under **[the MIT license](LICENSE)**.

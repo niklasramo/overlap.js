@@ -1,0 +1,29 @@
+{
+  "name": "overlap.js",
+  "description": "A JavaScript library for detecting collisions between elements",
+  "version": "0.1.1dev",
+  "main": "overlap.js",
+  "license": "MIT",
+  "ignore": [
+    "demos/",
+    "overlap.min.js"
+  ],
+  "keywords": [
+    "ui",
+    "position",
+    "positioning",
+    "overlap",
+    "collision",
+    "collisions",
+    "collide",
+    "intersection",
+    "element"
+  ],
+  "authors": [
+    { "name": "Niklas Rämö", "email": "inramo@gmail.com" }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/niklasramo/overlap.js.git"
+  }
+}

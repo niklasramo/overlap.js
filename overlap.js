@@ -1,6 +1,6 @@
 /*!
- * overlap.js v0.1
- * A JavaScript library for detecting collisions
+ * overlap.js v0.1.1dev
+ * A JavaScript library for detecting collisions between elements
  * http://github.com/niklasramo/overlap.js
  * Copyright (c) 2013 Niklas Rämö
  * Released under the MIT license
@@ -164,9 +164,14 @@
       },
       coverage: {
         player: 0,
-        target: 0
+        target: 0,
+        total: 0
       }
     };
+
+    // Make sure width and height are not negative
+    intersection.width = intersection.width < 0 ? 0 : intersection.width;
+    intersection.height = intersection.height < 0 ? 0 : intersection.height;
 
     // If player overlaps target
     if (intersection.width > 0 && intersection.height > 0) {
@@ -239,11 +244,11 @@
     // Sort hits based on coverage
     retData.hits.sort(compareCoverage);
 
-    return returnData ? retData : retData.hits.length;
+    return returnData ? retData : (retData.hits.length ? true : false);
 
   }
 
-  // Init.
+  // Init
   window.overlap = window.overlap || checkOverlap;
 
 })(self);

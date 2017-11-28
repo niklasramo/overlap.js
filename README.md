@@ -1,4 +1,6 @@
-#overlap.js
+# overlap.js
+
+**THIS LIBRARY IS NO LONGER MAINTAINED. PLEASE CHECK OUT [MEZR](https://github.com/niklasramo/mezr) LIBRARY FOR SIMILAR FUNCTIONALITY.**
 
 *A JavaScript library for detecting collisions*
 
@@ -6,12 +8,12 @@ Overlap.js is a cross-browser JavaScript library that allows you to check if an 
 
 Currently overlap.js supports only rectangle shaped elements, but there are plans bring in support for rounded (border-radius) and rotated elements.
 
-##Download
+## Download
 
 **[v0.1.1 - Production](overlap.min.js)**  
 **[v0.1.1 - Development](overlap.js)**
 
-##Usage
+## Usage
 
 First of all, include the overlap.js script in your site.
 ```html
@@ -31,7 +33,7 @@ overlap(el1, [el2, el3]);
 overlap(el1, [el2, el3], true);
 ```
 
-##Format
+## Format
 
 ```javascript
 // The format
@@ -114,6 +116,6 @@ var coverageTotal = target.intersection.coverage.total;
 
 ```
 
-##License
+## License
 
 Copyright &copy; 2013 Niklas Rämö. Licensed under **[the MIT license](LICENSE)**.
